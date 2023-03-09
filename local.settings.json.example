@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+  },
+  "ConnectionStrings": {
+    "SqlConnectionString": "Server=tcp:<myAzureServer>.database.windows.net,1433;Authentication=Active Directory Default;Database=<databaseName>;"
+  }
+}

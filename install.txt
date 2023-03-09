@@ -1,0 +1,9 @@
+dotnet add package Microsoft.Azure.WebJobs.Extensions.Sql --prerelease
+dotnet add package Microsoft.Data.SqlClient
+
+# Ajouter dans le csproj
+<Target Name="RunFunctions">
+  <Exec Command="func start" />
+</Target>
+# Pour faire du hot reload
+dotnet watch msbuild /t:RunFunctions
